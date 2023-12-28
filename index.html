@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="left">
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide"><img src="img1.jpeg" ></div>
+                    <div class="slide"><img src="img2.jpeg" ></div>
+                    <div class="slide"><img src="img3.jpeg" ></div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="toggle">
+                <button onclick="showSection('login')" id="login-btn">Login</button>
+                <button onclick="showSection('signup')" id="signup-btn">Sign-up</button>
+            </div>
+            <div id="login-section" class="form-section live-section">
+                <form action="" class="formlogin">
+                    <label for="Username" style="position: relative; display: block; ;">Username
+                        <input type="text" placeholder="Enter your Username" class="username" required>
+                    </label>
+                    <label for="password" style="position: relative; display: block;">Password
+                        <input type="password" placeholder="Enter your Password" class="password" required>
+                    </label>
+
+                    <div class="btn">
+                        <a href="#">Forgot Password</a>
+                    </div>
+                    <div class="btn1">
+                        <button type="submit" class="button">Login</button>
+                    </div>
+                    <div class="login-other">
+                        <i class="fa-brands fa-facebook" style="color: #0d63f8;"></i>
+                        <i class="fa fa-google fa-fw" style="color: #0F9D58;"></i>
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+
+                </form>
+
+            </div>
+
+            <div id="signup-section" class="form-section ">
+                <form action="" class="formsignup">
+                    <label for="E-mail" style="position: relative; display: block; ;">E-mail
+                        <input type="email" placeholder="Enter your E-mail" class="email" required>
+                    </label>
+                    <label for="fullname" style="position: relative; display: block; ">Full Name<input type="text"
+                            placeholder="Enter your Full name" class="fullname" required>
+                        </label>
+                    <label for="username" style="position: relative; display: block; ">Username<input type="text"
+                            placeholder="Create your username" class="username" required>
+                        </label>
+                    <label for="password" style="position: relative; display: block; ">Password<input type="password"
+                            placeholder="Set Password" class="password" required>
+                        </label>
+                    <label for="password" style="position: relative; display: block; ">Confirm Password<input
+                            type="password" placeholder="Re-enter Password" class="password" required>
+                        </label>
+                    <div class="btn2">
+
+                        <label>
+                            <input type="checkbox" required>
+                            I accept the <a href="#" target="_blank">Terms and Conditions</a>
+                        </label>
+                    </div>
+                    <br>
+                    <div class="btn3">
+                    <button type="submit" class="button">Signup</button>
+                    </div>
+                    <div class="login-other1">
+                        <i class="fa-brands fa-facebook" style="color: #0d63f8;"></i>
+                        <i class="fa fa-google fa-fw" style="color: #0F9D58;"></i>
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/fd42e4e9fb.js" crossorigin="anonymous"></script>
+
+</html>
